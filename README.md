@@ -6,7 +6,7 @@ A set of social media icons. These are coloured with the logo colour of the soci
 
 As with all image sets, these are available via the [Image Service](https://www.ft.com/__origami/service/image/v2).
 
-To get an image from the image service, use the following URL (replace the `product_source` with your product name and `icon_name` with the icon you want)
+To get an social logo from the Image Service, use the following URL (replace the `product_source` with your product name and `icon_name` with the icon you want)
 
 `https://www.ft.com/__origami/service/image/v2/images/raw/ftsocial:{icon_name}?source={product_source}`
 
