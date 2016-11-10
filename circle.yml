@@ -3,11 +3,13 @@ deployment:
     branch: master
     commands:
       - node ./buildImageList.js
-      - git config --global user.email "origami.support@ft.com"
-      - git config --global user.name "origamiserviceuser [bot]"
-      - git add imageList.json
-      - git commit -am 'Updating imageList.json [ci skip]'
-      - git push origin master
+      - >
+        if [ ! "$(git status --porcelain)" == "" ]; then
+          git config --global user.email "origami.support@ft.com";
+          git config --global user.name "origamiserviceuser [bot]";
+          git commit imageList.json -m 'Updating imageList.json [ci skip]';
+          git push origin master;
+        fi
 test:
   override:
     - echo "no tests"
