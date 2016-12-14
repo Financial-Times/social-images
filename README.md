@@ -2,6 +2,11 @@
 
 A set of social media icons. These are coloured with the logo colour of the social network.
 
+- [Usage](#usage)
+- [Adding or modifying icons](#adding-or-modifying-icons)
+- [Contact](#contact)
+- [Licence](#licence)
+
 ## Usage
 
 As with all image sets, these are available via the [Image Service](https://www.ft.com/__origami/service/image/v2).
@@ -30,10 +35,13 @@ To keep social icons consistent, please follow these guidelines:
   - **good** twitter.svg, financial-times.svg, yahoo.svg
   - **bad** Twitter.svg, financialtimes.svdg, yahoo!.svg
 
----
-## Questions or comments?
+----
 
-Please [raise an issue](https://github.com/financial-times/social-images/issues), or Internal FT users can contact us via [#ft-origami in Slack](https://financialtimes.slack.com/messages/ft-origami/).
+## Contact
+
+If you have any questions or comments about this component, or need help using it, please either [raise an issue](https://github.com/Financial-Times/o-component-boilerplate/issues), visit [#ft-origami](https://financialtimes.slack.com/messages/ft-origami/) or email [Origami Support](mailto:origami-support@ft.com).
+
+----
 
 ## Licence
 
