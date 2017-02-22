@@ -1,8 +1,13 @@
+
+machine:
+  node:
+    version: 6
+
 deployment:
   production:
     branch: master
     commands:
-      - node ./buildImageList.js
+      - ./node_modules/.bin/oist build-manifest --legacy
       - >
         if [ ! "$(git status --porcelain)" == "" ]; then
           git config --global user.email "origami.support@ft.com";
@@ -10,6 +15,12 @@ deployment:
           git commit imageList.json -m 'Updating imageList.json [ci skip]';
           git push origin master;
         fi
+  publish-imageset:
+    tag: /v.*/
+    owner: Financial-Times
+    commands:
+      - ./node_modules/.bin/oist publish-s3 --bucket origami-imageset-data-eu --scheme ftsocial --scheme-version $CIRCLE_TAG
+      - ./node_modules/.bin/oist publish-s3 --bucket origami-imageset-data-us --scheme ftsocial --scheme-version $CIRCLE_TAG
 test:
   override:
     - echo "no tests"
