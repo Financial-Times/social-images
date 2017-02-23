@@ -1,1 +1,46 @@
-{}
+{
+	"sourceDirectory": "src",
+	"scheme": "ftsocial",
+	"images": [
+		{
+			"name": "facebook",
+			"extension": "svg",
+			"path": "src/facebook.svg"
+		},
+		{
+			"name": "googleplus",
+			"extension": "svg",
+			"path": "src/googleplus.svg"
+		},
+		{
+			"name": "linkedin",
+			"extension": "svg",
+			"path": "src/linkedin.svg"
+		},
+		{
+			"name": "pinterest",
+			"extension": "svg",
+			"path": "src/pinterest.svg"
+		},
+		{
+			"name": "tumblr",
+			"extension": "svg",
+			"path": "src/tumblr.svg"
+		},
+		{
+			"name": "twitter",
+			"extension": "svg",
+			"path": "src/twitter.svg"
+		},
+		{
+			"name": "whatsapp",
+			"extension": "svg",
+			"path": "src/whatsapp.svg"
+		},
+		{
+			"name": "youtube",
+			"extension": "svg",
+			"path": "src/youtube.svg"
+		}
+	]
+}
