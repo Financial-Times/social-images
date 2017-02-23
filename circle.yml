@@ -7,12 +7,12 @@ deployment:
   production:
     branch: master
     commands:
-      - ./node_modules/.bin/oist build-manifest --legacy
+      - ./node_modules/.bin/oist build-manifest --scheme ftsocial
       - >
         if [ ! "$(git status --porcelain)" == "" ]; then
           git config --global user.email "origami.support@ft.com";
           git config --global user.name "origamiserviceuser [bot]";
-          git commit imageList.json -m 'Updating imageList.json [ci skip]';
+          git commit imageset.json -m 'Update image manifest [ci skip]';
           git push origin master;
         fi
   publish-imageset:
