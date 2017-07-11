@@ -4,6 +4,9 @@ machine:
     version: 6
 
 deployment:
+
+  # Code to auto-generate image set manifest files
+  # for every commit to master
   production:
     branch: master
     commands:
@@ -15,12 +18,17 @@ deployment:
           git commit imageset.json -m 'Update image manifest [ci skip]';
           git push origin master;
         fi
+
+  # Code to publish images to S3 whenever a new
+  # GitHub release/tag is created
   publish-imageset:
     tag: /v.*/
     owner: Financial-Times
     commands:
       - ./node_modules/.bin/oist publish-s3 --bucket origami-imageset-data-eu --scheme ftsocial --scheme-version $CIRCLE_TAG
       - ./node_modules/.bin/oist publish-s3 --bucket origami-imageset-data-us --scheme ftsocial --scheme-version $CIRCLE_TAG
+
+# Test overrides, used to verify SVG images
 test:
   override:
-    - echo "no tests"
+    - ./node_modules/.bin/oist verify
