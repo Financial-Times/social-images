@@ -27,6 +27,7 @@ deployment:
     commands:
       - ./node_modules/.bin/oist publish-s3 --bucket origami-imageset-data-eu --scheme ftsocial --scheme-version $CIRCLE_TAG
       - ./node_modules/.bin/oist publish-s3 --bucket origami-imageset-data-us --scheme ftsocial --scheme-version $CIRCLE_TAG
+      - ./node_modules/.bin/oist purge --scheme ftsocial --scheme-version $CIRCLE_TAG
 
 # Test overrides, used to verify SVG images
 test:
