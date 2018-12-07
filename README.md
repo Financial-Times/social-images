@@ -23,7 +23,7 @@ So to get a twitter icon:
 
 The Image Service will convert these images on the fly if you pass in the right parameters. To find out more about this, please see the [Image Service documentation](https://www.ft.com/__origami/service/image/v2/docs/api)
 
-## Adding or modifying icons
+## Adding or modifying icons
 
 To keep social icons consistent, please follow these guidelines:
 
