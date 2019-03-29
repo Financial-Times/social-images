@@ -1,34 +1,15 @@
 version: 2
 
-# References to reduce duplication in the rest of the config
-references:
-  container: &container_config
-    docker:
-      - image: circleci/node:8
-  cache_key: &cache_key
-    dependency-cache-{{ checksum "package.json" }}
-  cache_node_modules: &cache_node_modules
-    save_cache:
-      key: *cache_key
-      paths:
-        - node_modules
-  restore_node_modules: &restore_node_modules
-    restore_cache:
-      keys:
-        - *cache_key
-
 # Circle jobs
 jobs:
 
   # Ensure that the image set manifest is in place
   manifest:
-    <<: *container_config
+    docker:
+      - image: circleci/node:latest
     steps:
       - checkout
-      - *restore_node_modules
-      - run:
-          name: Install dependencies
-          command: npm install
+      - run: npm ci
       - *cache_node_modules
       - run:
           name: Build the image set manifest
@@ -45,16 +26,22 @@ jobs:
 
   # Publish the image set to S3
   publish:
-    <<: *container_config
+    docker:
+      - image: circleci/node:latest
     steps:
       - checkout
-      - *restore_node_modules
+      - run: npm ci
       - run:
           name: Publish to EU bucket
           command: ./node_modules/.bin/oist publish-s3 --bucket origami-imageset-data-eu --scheme ${IMAGESET_SCHEME} --source-directory=${IMAGESET_SOURCE_DIRECTORY} --scheme-version $CIRCLE_TAG
       - run:
           name: Publish to US bucket
           command: ./node_modules/.bin/oist publish-s3 --bucket origami-imageset-data-us --scheme ${IMAGESET_SCHEME} --source-directory=${IMAGESET_SOURCE_DIRECTORY} --scheme-version $CIRCLE_TAG
+      - run:
+          name: Authenticate with npm
+          command: echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}" > ${HOME}/.npmrc
+      - run: npm version --git-tag-version=false ${CIRCLE_TAG}
+      - run: npm publish --access=public
 
 # Circle workflows
 workflows:
