@@ -10,7 +10,6 @@ jobs:
     steps:
       - checkout
       - run: npm ci
-      - *cache_node_modules
       - run:
           name: Build the image set manifest
           command: ./node_modules/.bin/oist build-manifest --scheme ${IMAGESET_SCHEME} --source-directory=${IMAGESET_SOURCE_DIRECTORY}
