@@ -2,57 +2,26 @@ version: 2
 
 # Circle jobs
 jobs:
-
-  # Ensure that the image set manifest is in place
-  manifest:
-    docker:
-      - image: circleci/node:latest
-    steps:
-      - checkout
-      - run: npm ci
-      - run:
-          name: Build the image set manifest
-          command: ./node_modules/.bin/oist build-manifest --scheme ${IMAGESET_SCHEME} --source-directory=${IMAGESET_SOURCE_DIRECTORY}
-      - run:
-          name: Commit and push the manifest changes
-          command: >
-            if [ ! "$(git status --porcelain)" == "" ]; then
-              git config --global user.email "origami.support@ft.com";
-              git config --global user.name "origamiserviceuser [bot]";
-              git commit imageset.json -m 'Update image manifest [ci skip]';
-              git push origin master;
-            fi
-
   # Publish the image set to S3
   publish:
     docker:
       - image: circleci/node:latest
     steps:
       - checkout
+      - run: git config --global user.email "origami.support@ft.com";
+      - run: git config --global user.name "origamiserviceuser [bot]";
       - run: npm ci
-      - run:
-          name: Publish to EU bucket
-          command: ./node_modules/.bin/oist publish-s3 --bucket origami-imageset-data-eu --scheme ${IMAGESET_SCHEME} --source-directory=${IMAGESET_SOURCE_DIRECTORY} --scheme-version $CIRCLE_TAG
-      - run:
-          name: Publish to US bucket
-          command: ./node_modules/.bin/oist publish-s3 --bucket origami-imageset-data-us --scheme ${IMAGESET_SCHEME} --source-directory=${IMAGESET_SOURCE_DIRECTORY} --scheme-version $CIRCLE_TAG
       - run:
           name: Authenticate with npm
           command: echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}" > ${HOME}/.npmrc
-      - run: npm version --git-tag-version=false ${CIRCLE_TAG}
+      - run: npm version --git-tag-version=false ${CIRCLE_TAG} && git push origin HEAD:master
       - run: npm publish --access=public
 
 # Circle workflows
 workflows:
   version: 2
-  manifest-and-publish:
+  publish:
     jobs:
-      - manifest:
-          filters:
-            branches:
-              only: master
-            tags:
-              ignore: /.*/
       - publish:
           filters:
             branches:
