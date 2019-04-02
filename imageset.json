@@ -7,70 +7,80 @@
 			"extension": "svg",
 			"path": "src/facebook.svg",
 			"previousHash": "fa41b26bb2ca56d5a9c47f68c6a0ea304a68479c1f7c28b9682679213eb83b82ef076bf048935e8e78146b7d4558585f83ee1fc52b20d64eaf7314a3f0bcdf6e",
-			"hash": "fa41b26bb2ca56d5a9c47f68c6a0ea304a68479c1f7c28b9682679213eb83b82ef076bf048935e8e78146b7d4558585f83ee1fc52b20d64eaf7314a3f0bcdf6e"
+			"hash": "fa41b26bb2ca56d5a9c47f68c6a0ea304a68479c1f7c28b9682679213eb83b82ef076bf048935e8e78146b7d4558585f83ee1fc52b20d64eaf7314a3f0bcdf6e",
+			"url": "https://origami-images.ft.com/ftsocial/v2/facebook-fa41b26bb2ca56d5a9c47f68c6a0ea304a68479c1f7c28b9682679213eb83b82ef076bf048935e8e78146b7d4558585f83ee1fc52b20d64eaf7314a3f0bcdf6e"
 		},
 		{
 			"name": "github",
 			"extension": "svg",
 			"path": "src/github.svg",
 			"previousHash": "cf3c437f679deed5ad857a09ef1e93c48b2a99ef5829cadc20510a3fc38c129953283e4e47192d49a98987eb743447c4c584c50c34bc658cdea8e74850664a64",
-			"hash": "cf3c437f679deed5ad857a09ef1e93c48b2a99ef5829cadc20510a3fc38c129953283e4e47192d49a98987eb743447c4c584c50c34bc658cdea8e74850664a64"
+			"hash": "cf3c437f679deed5ad857a09ef1e93c48b2a99ef5829cadc20510a3fc38c129953283e4e47192d49a98987eb743447c4c584c50c34bc658cdea8e74850664a64",
+			"url": "https://origami-images.ft.com/ftsocial/v2/github-cf3c437f679deed5ad857a09ef1e93c48b2a99ef5829cadc20510a3fc38c129953283e4e47192d49a98987eb743447c4c584c50c34bc658cdea8e74850664a64"
 		},
 		{
 			"name": "googleplus",
 			"extension": "svg",
 			"path": "src/googleplus.svg",
 			"previousHash": "842506fd7c0bf9698e2945767aa2271cbc65371dcfe6a8685409a61e5b47de177ed9484b21b237ba4f45aea23ca4a054204be1ab2615f30bac8d4b39a160f15b",
-			"hash": "842506fd7c0bf9698e2945767aa2271cbc65371dcfe6a8685409a61e5b47de177ed9484b21b237ba4f45aea23ca4a054204be1ab2615f30bac8d4b39a160f15b"
+			"hash": "842506fd7c0bf9698e2945767aa2271cbc65371dcfe6a8685409a61e5b47de177ed9484b21b237ba4f45aea23ca4a054204be1ab2615f30bac8d4b39a160f15b",
+			"url": "https://origami-images.ft.com/ftsocial/v2/googleplus-842506fd7c0bf9698e2945767aa2271cbc65371dcfe6a8685409a61e5b47de177ed9484b21b237ba4f45aea23ca4a054204be1ab2615f30bac8d4b39a160f15b"
 		},
 		{
 			"name": "linkedin",
 			"extension": "svg",
 			"path": "src/linkedin.svg",
 			"previousHash": "476eb6098386c0bab93ca9afcaf268932814808ee0cea5ec6e8dbdce335101cb7dd2424074240d51df3f1ced9beeeacf84228fa9570daab5dddad2f5f229ba3b",
-			"hash": "476eb6098386c0bab93ca9afcaf268932814808ee0cea5ec6e8dbdce335101cb7dd2424074240d51df3f1ced9beeeacf84228fa9570daab5dddad2f5f229ba3b"
+			"hash": "476eb6098386c0bab93ca9afcaf268932814808ee0cea5ec6e8dbdce335101cb7dd2424074240d51df3f1ced9beeeacf84228fa9570daab5dddad2f5f229ba3b",
+			"url": "https://origami-images.ft.com/ftsocial/v2/linkedin-476eb6098386c0bab93ca9afcaf268932814808ee0cea5ec6e8dbdce335101cb7dd2424074240d51df3f1ced9beeeacf84228fa9570daab5dddad2f5f229ba3b"
 		},
 		{
 			"name": "pinterest",
 			"extension": "svg",
 			"path": "src/pinterest.svg",
 			"previousHash": "a5115cbf0a39e319ee069caa455dcb430399fa4ffd027ecc1f2554b7f9db67aae867bd4feaf149842169d4b2be1ee17d61e879e79c3ba8a60dec835d1928d345",
-			"hash": "a5115cbf0a39e319ee069caa455dcb430399fa4ffd027ecc1f2554b7f9db67aae867bd4feaf149842169d4b2be1ee17d61e879e79c3ba8a60dec835d1928d345"
+			"hash": "a5115cbf0a39e319ee069caa455dcb430399fa4ffd027ecc1f2554b7f9db67aae867bd4feaf149842169d4b2be1ee17d61e879e79c3ba8a60dec835d1928d345",
+			"url": "https://origami-images.ft.com/ftsocial/v2/pinterest-a5115cbf0a39e319ee069caa455dcb430399fa4ffd027ecc1f2554b7f9db67aae867bd4feaf149842169d4b2be1ee17d61e879e79c3ba8a60dec835d1928d345"
 		},
 		{
 			"name": "slack",
 			"extension": "svg",
 			"path": "src/slack.svg",
 			"previousHash": "10574787d661414d82f3998f9e24c7304f7af7666533089cbfdd479fd8730a3026e2d176b3840b38c6ae53724081e06705891696c6c0d20b14ff73c973afdf14",
-			"hash": "10574787d661414d82f3998f9e24c7304f7af7666533089cbfdd479fd8730a3026e2d176b3840b38c6ae53724081e06705891696c6c0d20b14ff73c973afdf14"
+			"hash": "10574787d661414d82f3998f9e24c7304f7af7666533089cbfdd479fd8730a3026e2d176b3840b38c6ae53724081e06705891696c6c0d20b14ff73c973afdf14",
+			"url": "https://origami-images.ft.com/ftsocial/v2/slack-10574787d661414d82f3998f9e24c7304f7af7666533089cbfdd479fd8730a3026e2d176b3840b38c6ae53724081e06705891696c6c0d20b14ff73c973afdf14"
 		},
 		{
 			"name": "tumblr",
 			"extension": "svg",
 			"path": "src/tumblr.svg",
 			"previousHash": "7bf7a22101485a2c9c9e71ec097dea081ba496ce3096e809104a10b66b3e81a50159ef76d1ab8e9c00a12e0913e35ae8d413dd5279a461a384c92e5cc828c3c7",
-			"hash": "7bf7a22101485a2c9c9e71ec097dea081ba496ce3096e809104a10b66b3e81a50159ef76d1ab8e9c00a12e0913e35ae8d413dd5279a461a384c92e5cc828c3c7"
+			"hash": "7bf7a22101485a2c9c9e71ec097dea081ba496ce3096e809104a10b66b3e81a50159ef76d1ab8e9c00a12e0913e35ae8d413dd5279a461a384c92e5cc828c3c7",
+			"url": "https://origami-images.ft.com/ftsocial/v2/tumblr-7bf7a22101485a2c9c9e71ec097dea081ba496ce3096e809104a10b66b3e81a50159ef76d1ab8e9c00a12e0913e35ae8d413dd5279a461a384c92e5cc828c3c7"
 		},
 		{
 			"name": "twitter",
 			"extension": "svg",
 			"path": "src/twitter.svg",
 			"previousHash": "853a400bd2110140d41dff0464105f528a222de06d93cbcc889e3c1d933376979cd2de57ff405803cf7ceecbda2a17cf722abd019487ad6283a2005f34ba227c",
-			"hash": "853a400bd2110140d41dff0464105f528a222de06d93cbcc889e3c1d933376979cd2de57ff405803cf7ceecbda2a17cf722abd019487ad6283a2005f34ba227c"
+			"hash": "853a400bd2110140d41dff0464105f528a222de06d93cbcc889e3c1d933376979cd2de57ff405803cf7ceecbda2a17cf722abd019487ad6283a2005f34ba227c",
+			"url": "https://origami-images.ft.com/ftsocial/v2/twitter-853a400bd2110140d41dff0464105f528a222de06d93cbcc889e3c1d933376979cd2de57ff405803cf7ceecbda2a17cf722abd019487ad6283a2005f34ba227c"
 		},
 		{
 			"name": "whatsapp",
 			"extension": "svg",
 			"path": "src/whatsapp.svg",
 			"previousHash": "7996f75e9f96e1ceba324e8c0feff8eeabccf9aaf364e1a11b1698f75d7b60bd01bf768826d83c8c54bbf51953b95ad25a97a31ad5d43d0a23e01d9ac82fa91b",
-			"hash": "7996f75e9f96e1ceba324e8c0feff8eeabccf9aaf364e1a11b1698f75d7b60bd01bf768826d83c8c54bbf51953b95ad25a97a31ad5d43d0a23e01d9ac82fa91b"
+			"hash": "7996f75e9f96e1ceba324e8c0feff8eeabccf9aaf364e1a11b1698f75d7b60bd01bf768826d83c8c54bbf51953b95ad25a97a31ad5d43d0a23e01d9ac82fa91b",
+			"url": "https://origami-images.ft.com/ftsocial/v2/whatsapp-7996f75e9f96e1ceba324e8c0feff8eeabccf9aaf364e1a11b1698f75d7b60bd01bf768826d83c8c54bbf51953b95ad25a97a31ad5d43d0a23e01d9ac82fa91b"
 		},
 		{
 			"name": "youtube",
 			"extension": "svg",
 			"path": "src/youtube.svg",
 			"previousHash": "689a9abeb436198f9bc66d7c960b254dae789a2197ef3b066991366d0722476d7fbc25e6154b3765b1fc3b812fcfc3af9ee9fbbbe7123efb0ce380e77f913e25",
-			"hash": "689a9abeb436198f9bc66d7c960b254dae789a2197ef3b066991366d0722476d7fbc25e6154b3765b1fc3b812fcfc3af9ee9fbbbe7123efb0ce380e77f913e25"
+			"hash": "689a9abeb436198f9bc66d7c960b254dae789a2197ef3b066991366d0722476d7fbc25e6154b3765b1fc3b812fcfc3af9ee9fbbbe7123efb0ce380e77f913e25",
+			"url": "https://origami-images.ft.com/ftsocial/v2/youtube-689a9abeb436198f9bc66d7c960b254dae789a2197ef3b066991366d0722476d7fbc25e6154b3765b1fc3b812fcfc3af9ee9fbbbe7123efb0ce380e77f913e25"
 		}
 	]
 }
