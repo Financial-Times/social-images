@@ -1,5 +1,6 @@
 {
-    "description": "Social media icons, with the correct brand colours.",
+    "description": "Icons for social media.",
+    "keyword": [ "share", "sharing", "image", "images" , "twitter", "facebook", "slack", "instagram"],
     "origamiType": "imageset",
     "origamiVersion": 1,
     "support": "https://github.com/Financial-Times/social-images/issues",
