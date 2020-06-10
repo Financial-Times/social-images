@@ -15,6 +15,6 @@
   },
   "main": "./imageset.json",
   "devDependencies": {
-    "@financial-times/origami-image-set-tools": "^2.3.5"
+    "@financial-times/origami-image-set-tools": "^2.3.6"
   }
 }
