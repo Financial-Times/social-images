@@ -1,4 +1,4 @@
-# Social images [![Build status](https://img.shields.io/circleci/project/Financial-Times/social-images.svg)](https://circleci.com/gh/Financial-Times/social-images)
+# Social images
 
 A set of social media icons. These are coloured with the logo colour of the social network.
 
