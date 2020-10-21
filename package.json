@@ -9,7 +9,6 @@
         "upload-to-s3": "npm run upload-to-s3:eu && npm run upload-to-s3:us",
         "upload-to-s3:eu": "oist publish-s3 --bucket origami-imageset-data-eu --scheme ftsocial --source-directory src --scheme-version $npm_package_version",
         "upload-to-s3:us": "oist publish-s3 --bucket origami-imageset-data-us --scheme ftsocial --source-directory src --scheme-version $npm_package_version",
-        "prepublishOnly": "npm run upload-to-s3",
         "version": "npm run build && git add imageset.json",
         "postversion": "git add package.json package-lock.json && git commit -m\"v$npm_package_version [ci skip]\""
     },
