@@ -1,20 +1,23 @@
 {
-  "name": "@financial-times/social-images",
-  "version": "2.2.2",
-  "engines": {
-    "node": "^10"
-  },
-  "scripts": {
-    "build": "oist build-manifest --scheme ftsocial --source-directory src --host https://origami-images.ft.com/ --scheme-version $npm_package_version",
-    "upload-to-s3": "npm run upload-to-s3:eu && npm run upload-to-s3:us",
-    "upload-to-s3:eu": "oist publish-s3 --bucket origami-imageset-data-eu --scheme ftsocial --source-directory src --scheme-version $npm_package_version",
-    "upload-to-s3:us": "oist publish-s3 --bucket origami-imageset-data-us --scheme ftsocial --source-directory src --scheme-version $npm_package_version",
-    "prepublishOnly": "npm run upload-to-s3",
-    "version": "npm run build && git add imageset.json",
-    "postversion": "git add package.json package-lock.json && git commit -m\"v$npm_package_version [ci skip]\""
-  },
-  "main": "./imageset.json",
-  "devDependencies": {
-    "@financial-times/origami-image-set-tools": "^2.3.12"
-  }
+    "name": "@financial-times/social-images",
+    "version": "3.0.0-0",
+    "engines": {
+        "node": "^10"
+    },
+    "scripts": {
+        "build": "oist build-manifest --scheme ftsocial --source-directory src --host https://origami-images.ft.com/ --scheme-version $npm_package_version",
+        "upload-to-s3": "npm run upload-to-s3:eu && npm run upload-to-s3:us",
+        "upload-to-s3:eu": "oist publish-s3 --bucket origami-imageset-data-eu --scheme ftsocial --source-directory src --scheme-version $npm_package_version",
+        "upload-to-s3:us": "oist publish-s3 --bucket origami-imageset-data-us --scheme ftsocial --source-directory src --scheme-version $npm_package_version",
+        "prepublishOnly": "npm run upload-to-s3",
+        "version": "npm run build && git add imageset.json",
+        "postversion": "git add package.json package-lock.json && git commit -m\"v$npm_package_version [ci skip]\""
+    },
+    "main": "./imageset.json",
+    "devDependencies": {
+        "@financial-times/origami-image-set-tools": "^2.3.12"
+    },
+    "publishConfig": {
+        "registry": "http://localhost:4873"
+    }
 }

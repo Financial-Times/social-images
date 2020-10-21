@@ -2,7 +2,7 @@
     "description": "Icons for social media.",
     "keywords": [ "share", "sharing", "image", "images" , "twitter", "facebook", "slack", "instagram"],
     "origamiType": "imageset",
-    "origamiVersion": 1,
+    "origamiVersion": 2,
     "support": "https://github.com/Financial-Times/social-images/issues",
     "supportContact": {
         "email": "origami.support@ft.com",
