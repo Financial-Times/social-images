@@ -1,6 +1,6 @@
 {
     "name": "@financial-times/social-images",
-    "version": "100.0.0-4",
+    "version": "100.0.0-5",
     "engines": {
         "node": "^10"
     },
