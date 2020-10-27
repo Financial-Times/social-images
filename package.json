@@ -1,14 +1,26 @@
 {
-    "name": "@financial-times/social-images",
-    "version": "100.0.0-8",
-    "main": "./imageset.json",
-    "devDependencies": {
-        "@financial-times/origami-image-set-tools": "^2.3.12"
-    },
-    "engines": {
-        "node": "^10"
-    },
-    "publishConfig": {
-        "registry": "https://origami-npm-registry-prototype.herokuapp.com"
-    }
+  "name": "@financial-times/social-images",
+  "version": "100.0.0-10",
+  "description": "A set of social media icons. These are coloured with the logo colour of the social network.",
+  "keywords": [],
+  "homepage": "https://github.com/Financial-Times/social-images#readme",
+  "bugs": {
+    "url": "https://github.com/Financial-Times/social-images/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Financial-Times/social-images.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "main": "./imageset.json",
+  "devDependencies": {
+    "@financial-times/origami-image-set-tools": "^2.3.12"
+  },
+  "engines": {
+    "node": "^10"
+  },
+  "publishConfig": {
+    "registry": "https://origami-npm-registry-prototype.herokuapp.com"
+  }
 }
