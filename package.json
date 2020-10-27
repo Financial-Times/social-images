@@ -1,12 +1,12 @@
 {
     "name": "@financial-times/social-images",
     "version": "100.0.0-7",
-    "engines": {
-        "node": "^10"
-    },
     "main": "./imageset.json",
     "devDependencies": {
         "@financial-times/origami-image-set-tools": "^2.3.12"
+    },
+    "engines": {
+        "node": "^10"
     },
     "publishConfig": {
         "registry": "http://localhost:4873"
