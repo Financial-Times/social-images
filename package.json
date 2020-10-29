@@ -19,7 +19,8 @@
     "typescript": "^4.0.5"
   },
   "engines": {
-    "node": "^10"
+    "node": "^10",
+    "npm": "^7"
   },
   "publishConfig": {
     "registry": "https://origami-npm-registry-prototype.herokuapp.com"
